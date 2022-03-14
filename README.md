@@ -58,4 +58,4 @@ Licensed under the [MIT license](LICENSE).
 
 Deployed Using
 
-<a href="https://www.openode.io/">Cloud hosted on opeNode.io</a
+<a href="https://www.openode.io/">Cloud hosted on opeNode.io</a>
