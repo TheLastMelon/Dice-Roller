@@ -1,4 +1,6 @@
 // Application hooks that run for every service
+//John Huff
+
 const logger = require('./hooks/logger');
 
 module.exports = {
