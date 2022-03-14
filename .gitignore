@@ -4,6 +4,7 @@ logs
 
 #config shit
 default.json
+production.json
 
 # Runtime data
 pids
