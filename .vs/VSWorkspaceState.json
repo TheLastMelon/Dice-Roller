@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\config",
+    "\\public",
+    "\\src",
+    "\\src\\hooks",
+    "\\src\\middleware",
+    "\\src\\services",
+    "\\test"
+  ],
+  "SelectedNode": "\\config",
+  "PreviewInSolutionExplorer": false
+}
