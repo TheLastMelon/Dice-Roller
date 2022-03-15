@@ -2,10 +2,6 @@
 logs
 *.log
 
-#config shit
-default.json
-production.json
-
 # Runtime data
 pids
 *.pid
@@ -115,8 +111,7 @@ $RECYCLE.BIN/
 lib/
 data/
 
-.openode
+# Personal Additions
 .vs
-
-.eslintrc.json
-.editorconfig
+default.json
+production.json
