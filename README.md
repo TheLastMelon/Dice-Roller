@@ -56,6 +56,6 @@ Copyright (c) 2016
 
 Licensed under the [MIT license](LICENSE).
 
-Deployed Using
+## Deployment
 
 <a href="https://www.openode.io/">Cloud hosted on opeNode.io</a>
