@@ -36,9 +36,12 @@
     "feathers-errors": "^2.9.2",
     "feathers-hooks": "^2.1.2",
     "feathers-hooks-common": "^5.0.6",
+    "feathers-postgres": "^1.0.0",
     "feathers-rest": "^1.8.1",
     "feathers-socketio": "^2.0.1",
     "helmet": "^5.0.2",
+    "pg": "^8.7.3",
+    "sequelize": "^6.17.0",
     "serve-favicon": "^2.5.0",
     "winston": "^3.6.0"
   },
