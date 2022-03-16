@@ -117,3 +117,5 @@ default.json
 production.json
 .env
 keys.js
+.editorconfig
+.eslintrc.json
