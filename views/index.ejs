@@ -30,9 +30,16 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="/auth/google">Login with Google</a></li>
-								<li><a href="#work">Login with Simplelogin</a></li>
-								<li><a href="#about">Login with Github</a></li>
+								<% if(user){ %>
+									<li><a href="/dashboard/campaign">Campaign Stats</a></li>
+									<li><a href="/dashboard">Welcome <%= user.name %>!</a></li>
+									<li><a href="/auth/logout">Logout</a></li>
+								<%} else { %>
+
+									<li><a href="/auth/google">Login with Google</a></li>
+									<li><a href="#work">Login with Simplelogin Simplelogin</a></li>
+									<li><a href="#about">Login with Github</a></li>
+								<% } %>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>

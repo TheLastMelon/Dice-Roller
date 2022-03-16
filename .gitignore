@@ -115,3 +115,5 @@ data/
 .vs
 default.json
 production.json
+.env
+keys.js
