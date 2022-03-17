@@ -5,6 +5,7 @@ const dashboardRoutes = require('./routes/dashboard-routes');
 const passPortSetup = require('./authentication/passport-setup')
 const mongoose = require('mongoose');
 const keys = require('./keys');
+require('./models/user-model')
 const cookieSession = require('cookie-session')
 
 
@@ -36,8 +37,12 @@ app.use(passport.session());
 /**
  * Initialize the connenction to the MongoDB
  */
-mongoose.connect(keys.mongoDBURI, () => {
-    console.log('Connected to MongoDB')
+mongoose.connect(keys.mongoDBURI, (err) => {
+    if(err){
+        console.log(err)
+    }else{
+        console.log('connection to database,  okie');
+    }
 });
 
 /**
