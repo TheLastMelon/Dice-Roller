@@ -34,7 +34,7 @@ const User = require('../models/user-model');
     /**
      * This fucntion is called when the abve strategy completes
      */
-}, (issuer, sub, profile, accessToken, refreshToken, done)=>{
+}, (issuer, profile, done)=>{
 
     console.log(profile);
 
@@ -49,7 +49,7 @@ const User = require('../models/user-model');
              * A user was found!
              */
             console.log('User Was Found: ' + currUser);
-            done(null, currUser);
+            return done(null, currUser);
         }else{
 
             /**
@@ -60,7 +60,7 @@ const User = require('../models/user-model');
                 name: profile.displayname
             }).save().then((newUser) => {
                 console.log('new user crated: ' + newUser);
-                done(null, newUser);
+                return done(null, newUser);
             })
         }
 
