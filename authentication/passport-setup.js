@@ -5,6 +5,7 @@ const User = require('../models/user-model');
 
 const googlePassport = require('./passport-setup-google');
 const githubPassport = require('./passport-setup-github');
+const simpleLoginPassport = require('./passport-setup-simplelogin');
 
 /**
  * Serializing the User ID
@@ -26,3 +27,4 @@ passport.deserializeUser((id, done) => {
 
 passport.use(googlePassport)
 passport.use(githubPassport);
+passport.use("simplelogin", simpleLoginPassport);

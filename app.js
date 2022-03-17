@@ -73,7 +73,10 @@ app.use('/images', express.static('images'));
 /**
  * The port for our app to listen on
  */
-app.listen(3020)
+app.listen(3020, (req, res) => {
+    console.log('Listening on Port: ' + 3020)
+});
+
 
 
 /**

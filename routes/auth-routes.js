@@ -41,9 +41,28 @@ router.get('/google/redirect', passport.authenticate('google') ,(req, res) =>{
 }));
 
 /**
- * Callback route for google
+ * Callback route for github
  */
 router.get('/github/redirect', passport.authenticate('github') ,(req, res) =>{
+    
+    res.redirect('/dashboard/');
+})
+
+/**
+ * Authentication with Github
+ */
+ router.get('/simplelogin', passport.authenticate('simplelogin', {
+
+    /**
+     * What imformation do we want from google. Selecting profile so I am able to grab name and id
+     */
+    scope: ['openid']
+}));
+
+/**
+ * Callback route for github
+ */
+router.get('/simplelogin/redirect', passport.authenticate('simplelogin') ,(req, res) =>{
     
     res.redirect('/dashboard/');
 })
