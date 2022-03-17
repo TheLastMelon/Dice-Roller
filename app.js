@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const keys = require('./keys');
 const cookieSession = require('cookie-session')
 
+
 /**
  * Initializing the Express App
  */
@@ -63,11 +64,11 @@ app.use('/assets', express.static('assets'));
  */
 app.use('/images', express.static('images'));
 
+
 /**
  * The port for our app to listen on
  */
-app.listen(3020);
-
+app.listen(3020)
 
 
 /**
