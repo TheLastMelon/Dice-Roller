@@ -23,7 +23,8 @@ const authCheck = (req, res, next) => {
  * The main dashboard for the users
  */
 router.get('/', authCheck, (req, res) =>{
-    res.send('You are logged into the profile ' + req.user.id);
+    //res.send('You are logged into the profile ' + req.user.id);
+    res.render('dashboard')
 })
 
 /**
